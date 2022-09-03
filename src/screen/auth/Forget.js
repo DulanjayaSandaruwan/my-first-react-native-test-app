@@ -1,7 +1,7 @@
 import React from "react";
 import { SafeAreaView, ScrollView, StyleSheet, View, ImageBackground, TextInput, TouchableOpacity, Text, Image } from "react-native";
 
-const Register = () => {
+const Forget = () => {
   return (
       <SafeAreaView>
         <ScrollView>
@@ -10,24 +10,14 @@ const Register = () => {
           </View>
           <View style={{padding:10}}>
             <View style={styles.formInput}>
-                <Text style={{textAlign:'center', fontSize:30, fontWeight:'bold', color:'#003865'}}>Register Here !</Text>
-            </View>
-            <View style={styles.formInput}>
-              <TextInput style={styles.textInput} placeholder="Enter your full name"/>
+                <Text style={{textAlign:'center', fontSize:30, fontWeight:'bold', color:'#003865'}}>Reset Your Password !</Text>
             </View>
             <View style={styles.formInput}>
               <TextInput style={styles.textInput} placeholder="Enter your email address"/>
             </View>
             <View style={styles.formInput}>
-              <TextInput style={styles.textInput} placeholder="Password" secureTextEntry={true}/>
-            </View>
-            <View style={styles.formInput}>
-              <TextInput style={styles.textInput} placeholder="Confirm Password" secureTextEntry={true}/>
-            </View>
-          
-            <View style={styles.formInput}>
               <TouchableOpacity style={styles.loginBtn}>
-                <Text style={{textAlign:'center', fontSize:18, color:'#fff'}}>Register</Text>
+                <Text style={{textAlign:'center', fontSize:18, color:'#fff'}}>Send Reset Link</Text>
               </TouchableOpacity>
             </View>
             <View style={styles.formInput}>
@@ -70,4 +60,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Register;
+export default Forget;
