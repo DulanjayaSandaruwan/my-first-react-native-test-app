@@ -12,6 +12,9 @@ const Home = () => {
           <Text style={styles.myTitle}>
             Welcome To My First App
           </Text>
+          <Text style={styles.title}>
+            Designed by Dulanjaya Sandaruwan
+          </Text>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -30,7 +33,12 @@ const styles = StyleSheet.create({
   imageHome:{
     justifyContent:'center',
     alignItems:'center'
-  }
+  },
+  title:{
+    fontSize:15,
+    textAlign:'center',
+    marginTop:450,
+  },
 });
 
 export default Home;
