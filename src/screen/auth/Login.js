@@ -1,9 +1,13 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { SafeAreaView, ScrollView, StyleSheet, View, ImageBackground, TextInput, TouchableOpacity, Text, Image } from "react-native";
 
 const Login = () => {
+
+  const navigation = useNavigation();
+
   return (
-      <SafeAreaView style={{backgroundColor:'#fff'}}>
+      <SafeAreaView>
         <ScrollView>
           <View style={styles.container}>
             <ImageBackground source={require('../../assets/images/bg_image.png')} resizeMode='cover' style={styles.bgImage}/>
@@ -19,12 +23,12 @@ const Login = () => {
               <TextInput style={styles.textInput} placeholder="Password" secureTextEntry={true}/>
             </View>
             <View style={styles.formInput}>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={() => {navigation.navigate("Forget Password")}}>
                 <Text style={{textAlign:'right', fontSize:16, fontWeight:'bold', color:'#FF1E00'}}>Forget Password ?</Text>
               </TouchableOpacity>
             </View>
             <View style={styles.formInput}>
-              <TouchableOpacity style={styles.loginBtn}>
+              <TouchableOpacity style={styles.loginBtn} onPress={() => {navigation.navigate("Home")}}>
                 <Text style={{textAlign:'center', fontSize:18, color:'#fff'}}>Login</Text>
               </TouchableOpacity>
             </View>
@@ -45,7 +49,7 @@ const Login = () => {
               <View style={{height:1, backgroundColor:'#ddd', width:'100%'}}></View>
             </View>
             <View style={styles.formInput}>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={() => {navigation.navigate("Register")}}>
                 <Text style={{textAlign:'center', fontSize:16, fontWeight:'bold', color:'#0096FF'}}>Need an account ? Register here !</Text>
               </TouchableOpacity>
             </View>
