@@ -22,7 +22,7 @@ const Splash = () => {
         <Image source={require('../../assets/images/logo.png')} style={{width:100, height:100}}/>
       </View>
       <View>
-        <Text style={{fontSize:18, textAlign:'center'}}>Designed By Dulanjaya Sandaruwan</Text>
+        <Text style={{fontSize:18, textAlign:'center'}}>Designed By Dulanjaya Sandaruwan !</Text>
       </View>
     </SafeAreaView>
   )
