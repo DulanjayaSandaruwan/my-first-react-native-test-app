@@ -3,7 +3,7 @@ import { SafeAreaView, ScrollView, StyleSheet, View, Text, Image } from "react-n
 
 const Home = () => {
   return (
-    <SafeAreaView style={{flex:1}}>
+    <SafeAreaView style={{flex:1, backgroundColor:'#fff'}}>
       <ScrollView>
         <View style={styles.imageHome}>
           <Image source={require('../assets/images/home_bg.png')} resizeMode='contain' style={{height:200}}/>

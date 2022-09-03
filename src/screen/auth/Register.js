@@ -3,7 +3,7 @@ import { SafeAreaView, ScrollView, StyleSheet, View, ImageBackground, TextInput,
 
 const Register = () => {
   return (
-      <SafeAreaView>
+      <SafeAreaView style={{backgroundColor:'#fff'}}>
         <ScrollView>
           <View style={styles.container}>
             <ImageBackground source={require('../../assets/images/bg_image.png')} resizeMode='cover' style={styles.bgImage}/>
